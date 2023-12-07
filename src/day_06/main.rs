@@ -13,20 +13,19 @@ fn main() -> io::Result<()> {
     let mut contents: Vec<&str> = contents.lines().collect();
 
     dbg!(&contents);
-
-    let times = contents.remove(0);
-    let times: Vec<&str> = times.split(':').collect();
-    let times = times[1];
+    // 37286485
+    // 37286485
+    let times: &str = contents.remove(0);
     let times: Vec<u128> = times
         .split_whitespace()
+        .skip(1)
         .map(|s| s.parse::<u128>().unwrap())
         .collect();
 
     let distances = contents.remove(0);
-    let distances: Vec<&str> = distances.split(':').collect();
-    let distances = distances[1];
     let distances: Vec<u128> = distances
         .split_whitespace()
+        .skip(1)
         .map(|s| s.parse::<u128>().unwrap())
         .collect();
 
@@ -43,7 +42,6 @@ fn main() -> io::Result<()> {
             }
         }
         if number_of_ways_to_win > 0 {
-            println!("HELLO");
             score = score * number_of_ways_to_win;
         }
     }
