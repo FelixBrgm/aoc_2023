@@ -1,0 +1,30 @@
+[package]
+name = "aoc_2023"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "day_01"
+path = "src/day_01/main.rs"
+[[bin]]
+name = "day_02"
+path = "src/day_02/main.rs"
+[[bin]]
+name = "day_03"
+path = "src/day_03/main.rs"
+[[bin]]
+name = "day_04"
+path = "src/day_04/main.rs"
+[[bin]]
+name = "day_05"
+path = "src/day_05/main.rs"
+[[bin]]
+name = "day_06"
+path = "src/day_06/main.rs"
+[[bin]]
+name = "day_07"
+path = "src/day_07/main.rs"
+
+[dependencies]
