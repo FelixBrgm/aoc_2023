@@ -91,7 +91,6 @@ impl Hand {
             return HandType::One_pair;
         }
 
-        dbg!(&card_counts);
         HandType::High_card
     }
 }
